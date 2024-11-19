@@ -1,4 +1,4 @@
-import Container from "../component/container";
+
 import { Button } from "flowbite-react";
 import TableHeader from "./TableHeader";
 import { Table } from "flowbite-react";
@@ -8,21 +8,6 @@ import { useReducer, useState } from "react";
 import taskReducer from "../component/reducer/Reducer";
 
 
-// Reducer function to handle task actions
-// function taskReducer(state, action) {
-//   switch (action.type) {
-//     case "add":
-//       return [action.payload, ...state]; // Adds new task and reverses the order
-//     case "edit":
-//       return state.map(task => (task.id === action.payload.id ? action.payload : task));
-//     case "delete":
-//       return state.filter(task => task.id !== action.payload);
-//     case "clear":
-//       return [];
-//     default:
-//       return state;
-//   }
-// }
 
 function NoData() {
   return (
@@ -79,7 +64,7 @@ function TaskTable() {
   });
 
   return (
-    <Container className="mt-8">
+    <div className="mt-8 max-w-screen-xl m-auto px-3">
       <div className="justify-center flex sm:justify-end ">
         <Button onClick={() => setOpenModal(true)} className="mr-2" color="success">Add Task</Button>
         <Button onClick={clearHandler} color="failure">Clear Task</Button>
@@ -105,7 +90,7 @@ function TaskTable() {
         </div>
       </div>
       <ModalPopup onCreate={createHandler} onOpen={openModal} onClose={() => setOpenModal(false)} />
-    </Container>
+    </div>
   );
 }
 
