@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
-
 import logo from "../../images/logo-task.png";
 import { MdOutlineLightMode } from "react-icons/md";
-
 import Container from "../../component/Container";
 
 function Header() {
