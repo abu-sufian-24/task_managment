@@ -1,0 +1,32 @@
+let createHandler = item => {
+  let updeteTask = [...tasks, item];
+  setTasks(updeteTask.reverse());
+};
+
+let editeHandler = task => {
+  setTasks(
+    tasks.map(item => {
+      if (task.id === item.id) {
+        return task;
+      } else {
+        return item;
+      }
+    })
+  );
+};
+
+let deletHandler = id => {
+  setTasks(
+    tasks.filter(item => {
+      return item.id != id;
+    })
+  );
+};
+
+let updateText = tasks.filter(item => {
+  return item.Title.toLowerCase().includes(search.toLowerCase());
+});
+
+let updateText = tasks.filter(item => {
+  return item.Title.toLowerCase().includes(search.toLowerCase());
+});
