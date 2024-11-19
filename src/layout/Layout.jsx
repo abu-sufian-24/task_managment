@@ -1,8 +1,8 @@
 import Footer from "../sections/footer/Footer"
-import Container from "../component/container"
 import Header from "../sections/Header/Header"
 import Banner from "../sections/banner/Banner"
 import TaskTable from "../task-table/TaskTable"
+import Container from "./component/Container"
 
 
 function Layout() {
