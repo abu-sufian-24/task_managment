@@ -1,4 +1,5 @@
-import Container from "../../component/container"
+
+import Container from "../../component/Container"
 import bannerImage from "../../images/banner-img.png"
 
 
