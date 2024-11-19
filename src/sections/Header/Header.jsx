@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import Container from "../../component/container";
+
 import logo from "../../images/logo-task.png";
-import { MdOutlineLightMode, MdDarkMode } from "react-icons/md";
-import { theme } from "flowbite-react";
+import { MdOutlineLightMode } from "react-icons/md";
+
+import Container from "../../component/Container";
 
 function Header() {
   let [theme, setTheme] = useState(localStorage.getItem('themMode') || 'light')
